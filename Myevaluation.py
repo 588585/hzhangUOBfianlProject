@@ -28,7 +28,7 @@ except ImportError:
     print("worning: PyTorch cannot be imported, using CNTK instead")
 try:
     from malmopy.model.cntk import QNeuralNetwork
-    from MyDDQNAgent_cntk import MyDDQN_Q as CntkDDQN_Q
+    from MyDQNAgent import MyDDQN_Q as CntkDDQN_Q
     USING_CNTK = True
 except ImportError:
     USING_CNTK = False
@@ -471,7 +471,7 @@ def main():
     # Set up backend
     if args.backend == 'cntk':
         from malmopy.model.cntk import QNeuralNetwork
-        from MyDDQNAgent_cntk import MyDDQN_Q as CntkDDQN_Q
+        from MyDQNAgent import MyDDQN_Q as CntkDDQN_Q
 
     elif args.backend == 'pytorch' :
         from MyDDQNAgent import MyDDQN_Q, PyTorchQModel
