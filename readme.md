@@ -25,6 +25,7 @@ Replace malmopy\environment\malmo\malmo.py with malmo.py
 
 Overwrite all other files to malmo-challenge\ai_challenge\pig_chase
 
+
 ### Installation complete
 
 ## Project Structure
